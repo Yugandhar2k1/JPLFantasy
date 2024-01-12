@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JPL Fantasy - Under Development</title>
+    <title>Tirumala Token Updates - JPL Fantasy</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -12,19 +12,12 @@
             background-color: #d8e3e7;
             color: #333;
         }
-        
+
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px;
-        }
-
-        header img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
         }
 
         section {
@@ -38,14 +31,13 @@
         .under-development {
             text-align: center;
             font-size: 24px;
-            color: #ff0000; /* Red color for the text */
+            color: #555;
             margin-top: 20px;
-            font-family: 'Courier New', monospace; /* Different font */
         }
 
         .logo-container {
-            text-align: left; /* Align the logo container to the left */
-            background-color: #4caf50; /* Green background color */
+            text-align: left;
+            background-color: #4caf50;
             padding: 20px;
         }
 
@@ -58,19 +50,19 @@
             font-size: 18px;
             color: #fff;
             margin-top: 10px;
-            font-weight: bold; /* Added bold font-weight */
-            text-align: center; /* Center-align the text */
-            font-family: 'Courier New', monospace; /* Different font */
-            color: #ff0000; /* Red color for the text */
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            color: #ff0000;
         }
 
         .instagram-link {
             margin-top: 10px;
-            text-align: center; /* Center-align the Instagram link */
+            text-align: center;
         }
 
         .instagram-link a {
-            color: #0000ff; /* Blue color for the link */
+            color: #0000ff;
             text-decoration: none;
             font-weight: bold;
         }
@@ -88,7 +80,7 @@
         .suggestion-form {
             max-width: 600px;
             margin: 0 auto;
-            text-align: left; /* Left-align the form contents */
+            text-align: left;
         }
 
         .form-group {
@@ -114,20 +106,19 @@
             padding: 10px 15px;
             border: none;
             cursor: pointer;
-            display: block; /* Display the button as block to center it */
-            margin: 0 auto; /* Center the button using margin */
+            display: block;
+            margin: 0 auto;
         }
                 nav {
             text-align: center;
             background-color: #333;
             padding: 10px;
-            color: #fff;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
         }
     </style>
 </head>
@@ -136,14 +127,6 @@
     <header>
         <h1>Welcome to JPL Fantasy</h1>
     </header>
-        <!-- Navigation Section -->
-    <nav>
-        <a href="#gallery">Gallery</a>
-        <a href="#news">News</a>
-        <a href="#jangalapalli">Jangalapalli</a>
-        <a href="#kanipakam">Kanipakam</a>
-        <a href="#tirumala">Tirumala Token Updates</a>
-    </nav>
 
     <!-- Logo Container with Green Background -->
     <div class="logo-container">
@@ -151,62 +134,44 @@
         <p class="under-construction-text">WEBSITE IS UNDER CONSTRUCTION</p>
         <p class="instagram-link">Follow us on Instagram: <a href="https://www.instagram.com/jpl_fantasy" target="_blank">@jpl_fantasy</a></p>
     </div>
+        <!-- Navigation Menu -->
+    <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#news">News</a>
+        <a href="#jangalapalli">Jangalapalli</a>
+        <a href="#kanipakam">Kanipakam</a>
+        <a href="tirumala_token_updates.html">Tirumala Token Updates</a>
+    </nav>
 
-    <!-- Section: Gallery -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <!-- Add gallery content here -->
-    </section>
-
-    <!-- Section: News -->
-    <section id="news">
-        <h2>News</h2>
-        <!-- Add news content here -->
-    </section>
-
-    <!-- Section: Jangalapalli -->
-    <section id="jangalapalli">
-        <h2>Jangalapalli</h2>
-        <!-- Add Jangalapalli content here -->
-    </section>
-
-    <!-- Section: Kanipakam -->
-    <section id="kanipakam">
-        <h2>Kanipakam</h2>
-        <!-- Add Kanipakam content here -->
-    </section>
 
     <!-- Section: Tirumala Token Updates -->
-    <section id="tirumala">
+    <section id="tirumala-token-updates">
         <h2>Tirumala Token Updates</h2>
-        <!-- Add Tirumala Token Updates content here -->
+        <p>This section provides updates about Tirumala Token. Stay tuned for the latest information.</p>
     </section>
 
-    <section>
-        <p>Your portal to a world of fantasy and wonder. Explore enchanting tales, magical moments, and mythical wonders. Join the adventure today!</p>
+    <!-- Suggestion Form -->
+    <div class="suggestion-form">
+        <h2>Suggestion Box</h2>
+        <form action="process_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="suggestions">Suggestions:</label>
+                <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
 
-        <!-- Suggestion Form -->
-        <div class="suggestion-form">
-            <h2>Suggestion Box</h2>
-            <form action="process_form.php" method="post"> <!-- Change 'process_form.php' to the actual script that will handle form submissions -->
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="suggestions">Suggestions:</label>
-                    <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="submit-btn">Submit</button>
-                </div>
-            </form>
-        </div>
-    </section>
     <!-- Copyright Notice -->
     <footer>
         &copy; 2024 JPL Fantasy. All rights reserved.
