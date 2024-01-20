@@ -18,6 +18,18 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            position: relative;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .logo-container img {
+            max-width: 40%; /* Adjusted logo size */
+            height: auto;
         }
 
         section {
@@ -27,17 +39,6 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-        }
-
-        .logo-container {
-            text-align: right;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .logo-container img {
-            max-width: 60%; /* Adjusted logo size */
-            height: auto;
         }
 
         .under-construction-text {
@@ -130,12 +131,11 @@
 
     <header>
         <h1>Welcome to JPL Fantasy</h1>
+        <!-- Logo Container in Top Right Corner -->
+        <div class="logo-container">
+            <img src="logo.png" alt="JPL Fantasy Logo">
+        </div>
     </header>
-
-    <!-- Logo Container in Top Right Corner -->
-    <div class="logo-container">
-        <img src="logo.png" alt="JPL Fantasy Logo">
-    </div>
 
     <!-- Navigation Menu -->
     <nav>
