@@ -5,7 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tirumala Token Updates - JPL Fantasy</title>
     <style>
-        /* Your existing styles go here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .logo-container img {
+            max-width: 20%; /* Adjusted logo size */
+            height: auto;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4caf50;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .suggestion-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -24,7 +121,7 @@
         <a href="news.html">News</a>
         <a href="jangalapalli.html">Jangalapalli</a>
         <a href="kanipakam.html">Kanipakam</a>
-        <a href="ttd.html">Tirumala Token Updates</a> <!-- Added this line for the link -->
+        <a href="ttd.html">Tirumala Token Updates</a>
     </nav>
 
     <!-- Section: Tirumala Token Updates -->
@@ -35,7 +132,24 @@
 
     <!-- Suggestion Form -->
     <div class="suggestion-form">
-        <!-- Your existing suggestion form code goes here -->
+        <h2>Suggestion Box</h2>
+        <form action="process_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="suggestions">Suggestions:</label>
+                <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
     </div>
 
     <!-- Copyright Notice -->
