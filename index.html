@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanipakam Temple - JPL Fantasy</title>
+    <title>Tirumala Token Updates - JPL Fantasy</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -15,16 +15,23 @@
         }
 
         header {
-            background: url('header-background.jpg') center center/cover no-repeat;
+            background-color: #1a1a1a;
             color: #fff;
             text-align: center;
-            padding: 80px;
-            position: relative;
+            padding: 20px;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2em;
+        .watermark {
+            content: "";
+            background: url('watermark_logo.png') center center no-repeat;
+            opacity: 0.2; /* Adjust the opacity as needed */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            max-width: 20%; /* Adjusted max-width for the logo */
         }
 
         nav {
@@ -79,6 +86,16 @@
             box-sizing: border-box;
         }
 
+        .submit-btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
         footer {
             text-align: center;
             background-color: #333;
@@ -96,6 +113,9 @@
         <h1>Welcome to JPL Fantasy</h1>
     </header>
 
+    <!-- Watermark -->
+    <div class="watermark"></div>
+
     <!-- Navigation Menu -->
     <nav>
         <a href="gallery.html">Gallery</a>
@@ -105,10 +125,33 @@
         <a href="ttd.html">Tirumala Token Updates</a>
     </nav>
 
-    <!-- Section: Kanipakam Temple Information -->
-    <section id="kanipakam-temple-info">
-        <!-- Add your content here -->
+    <!-- Section: Tirumala Token Updates -->
+    <section id="tirumala-token-updates">
+        <h2>Tirumala Token Updates</h2>
+        <p>This section provides updates about Tirumala Token. Stay tuned for the latest information.</p>
     </section>
+
+    <!-- Suggestion Form -->
+    <div class="suggestion-form">
+        <h2>Suggestion Box</h2>
+        <form action="process_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="suggestions">Suggestions:</label>
+                <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
 
     <!-- Copyright Notice -->
     <footer>
