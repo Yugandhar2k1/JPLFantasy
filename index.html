@@ -12,12 +12,12 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        header {
-            background-color: #0073e6;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
         nav {
             display: flex;
             justify-content: center;
@@ -64,6 +64,17 @@
         <a href="#contact">Contact</a>
         <a href="#apps">Editing Apps</a>
     </nav>
+    <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>See what our clients have to say about us:</p>
+    <blockquote>
+        "Infinity Creations transformed our wedding photos into stunning memories we'll cherish forever!" - Jane Doe
+    </blockquote>
+    <blockquote>
+        "Amazing service and top-quality editing. Highly recommended!" - John Smith
+    </blockquote>
+</section>
+
     <section id="about">
         <h2>About Me</h2>
         <p>Welcome to Infinity Creations! We specialize in providing top-notch photo editing services to make your images stand out. Whether it's for personal use, business, or special occasions, we've got you covered.</p>
@@ -84,6 +95,20 @@
         <p>Email: <a href="mailto:info@infinitycreations.com">info@infinitycreations.com</a></p>
         <p>Phone: +123-456-7890</p>
     </section>
+    <section id="contact">
+    <h2>Contact</h2>
+    <p>Have a question or want to get started with our services? Reach out to us:</p>
+    <form action="mailto:info@infinitycreations.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" style="width: 100%; padding: 8px; margin: 5px 0;"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" style="width: 100%; padding: 8px; margin: 5px 0;"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" style="width: 100%; padding: 8px; margin: 5px 0;" rows="4"></textarea><br>
+        <input type="submit" value="Send" style="background-color: #0073e6; color: white; padding: 10px; border: none; border-radius: 5px;">
+    </form>
+</section>
+
     <section id="apps">
         <h2>Editing Apps</h2>
         <p>We use the latest and most powerful photo editing apps to ensure the best results:</p>
